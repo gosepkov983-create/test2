@@ -4,7 +4,7 @@ from PyQt6.QtCore import Qt
 
 app = QApplication(sys.argv)
 window = QMainWindow()
-window.setWindowTitle("Таблица")
+window.setWindowTitle("Приложение")
 window.resize(800, 500)
 
 table = QTableWidget(5, 4)
@@ -25,7 +25,7 @@ table.setCellWidget(0, 2, btn2)
 btn3 = QPushButton("3")
 table.setCellWidget(0, 3, btn3)
 
-# Строка 2
+
 table.setItem(1, 0, QTableWidgetItem("Строка 2"))
 table.item(1, 0).setFlags(table.item(1, 0).flags() | Qt.ItemFlag.ItemIsEditable)
 
@@ -38,7 +38,6 @@ table.setCellWidget(1, 2, btn2)
 btn3 = QPushButton("3")
 table.setCellWidget(1, 3, btn3)
 
-# Строка 3
 table.setItem(2, 0, QTableWidgetItem("Строка 3"))
 table.item(2, 0).setFlags(table.item(2, 0).flags() | Qt.ItemFlag.ItemIsEditable)
 
@@ -51,7 +50,7 @@ table.setCellWidget(2, 2, btn2)
 btn3 = QPushButton("3")
 table.setCellWidget(2, 3, btn3)
 
-# Строка 4
+
 table.setItem(3, 0, QTableWidgetItem("Строка 4"))
 table.item(3, 0).setFlags(table.item(3, 0).flags() | Qt.ItemFlag.ItemIsEditable)
 
@@ -64,7 +63,7 @@ table.setCellWidget(3, 2, btn2)
 btn3 = QPushButton("3")
 table.setCellWidget(3, 3, btn3)
 
-# Строка 5
+
 table.setItem(4, 0, QTableWidgetItem("Строка 5"))
 table.item(4, 0).setFlags(table.item(4, 0).flags() | Qt.ItemFlag.ItemIsEditable)
 
